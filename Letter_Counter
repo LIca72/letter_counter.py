@@ -1,0 +1,15 @@
+# Letter Counter
+# This program counts how many times each letter appears in a word entered by the user.
+
+letter_counter = input("Enter the word: ")
+letter_count = {}  # Create an empty dictionary to store letter counts
+
+for letter in letter_counter:
+    if letter in letter_count:
+        letter_count[letter] += 1  # If letter is already in the dictionary, add 1
+    else:
+        letter_count[letter] = 1   # If letter is not in the dictionary, set count to 1
+
+print("\nLetter count in the word:")
+for letter, count in letter_count.items():
+    print(f"{letter}: {count}")
